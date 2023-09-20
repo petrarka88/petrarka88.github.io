@@ -9,18 +9,6 @@ body{
     width: 90%;
 }
 
-.text-center{
-    text-align: center;
-}
-
-/*en img y video se ajusta el ancho para que este contenido dentro del bloque*/
-img{
-    width: 99%; 
-}
-
-video{
-    width: 99%;
-}
 
 
 /*corregimos el ancho de cada bloque para que se alineen (esto tambien se hace en el .noticia)*/
@@ -28,6 +16,38 @@ video{
     display: flex;
     flex-wrap: wrap;
 }
+
+.banner{
+    background: #fff;
+    color: #333;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;
+    width: 99%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.widget{
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;
+    background-color: #333;
+    color: #fff;
+    width: 25%;
+    margin: 10px;
+    float: right;
+    box-sizing: border-box;
+}
+
+.widget p{
+    display: inline-block;
+    line-height: 1px;
+}
+
 
 /*en noticia se encuentra la configuracion de cada bloque de noticia, en noticia:hover se encuentra las modificaciones que se hacen al poner el ratón encima*/
 .noticia{
@@ -43,6 +63,14 @@ video{
     margin-bottom: 10px;
 }
 
+.noticia img{
+    width: 99%; 
+}
+
+.noticia video{
+    width: 99%;
+}
+
 .noticia:hover{
     background: #000;
     color: #fff;
@@ -51,6 +79,7 @@ video{
 
 /*en btn-categotia se encuentra la configuracion de cada bloque de boton (mostrados arriba de la pagina) y en hover como se modifica al poner el ratón encima*/
 .btn-categoria{
+    color: white;
     display: block;
     padding: 10px;
     margin-bottom: 10px;
@@ -66,17 +95,43 @@ footer{
     color: #31231e;
 }
 
-.widget{
-    background-color: #333;
+.form{
+    background: #333;
     color: #fff;
-    width: 40%;
-    margin: 32px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;
+    width: 99%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    float: left;
 }
 
-.widget p{
-    display: inline-block;
-    line-height: 16px;
+.menu{
+    background: #333;
+    color: #fff;
+    border: 1px solid #333;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #888;
+    width: 88%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
+
+aside{
+    float: right;
+    width: 400px;
+}
+
+.contador{
+    color: aquamarine;
+    float: right;
+}
+
+
 
 /*en las opciones media se realiza la responsividad del sitio, para que se ajuste a medida que la resolucion del navegador o dispositivo sea diferente*/
 @media(max-width: 1070px){
